@@ -1,0 +1,21 @@
+buffer is a memory array 
+where BUF_SIZE = 10000
+starts as |rand|rand|rand|...|to BUF_SIZE|
+simpleCharManager initializes buffer as
+|\0|\0|\0|\0|\0|\0|...|\0|\0| to 10000 values
+w1 = alloc_chars(6)
+| | | | | | |\0|\0|...|\0\
+first six values initialized with ' '
+w1[0-5] = 'h' 'e' 'l' 'l' 'o' ' '
+|h|e|l|l|o| |\0|\0|...|\0|
+w2 = alloc_chars(6)
+|h|e|l|l|o| | | | | | | |\0|...|\0|
+w2[0-6] = world!\n
+|h|e|l|l|o| |w|o|r|l|d|!|\n|\0|...|\0|
+
+free_chars(w2)
+|h|e|l|l|o| |\0|\0|...|\0|
+w3 = alloc_chars(11)
+|h|e|l|l|o| | | | | | | | | | | | |\0|\0|...|\0|
+w3[0-11] = moon! Bye.\n
+|h|e|l|l|o| |m|o|o|n|!| |B|y|e|.|\n|\0|\0|...|\0|

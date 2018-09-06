@@ -1,0 +1,35 @@
+David Lee HW1
+Problem 1
+a)
+	1. OK
+	2. Not Ok
+	3. Very not ok
+	4. Ok
+	5. Not ok
+	6. Not ok
+	7. Very not ok
+	8. Very not ok
+	only 1, 4 are acceptable
+
+b)
+	the recommended ways to write code are 2 and 4
+
+c) 	
+	2
+d)
+	2 as well as 4
+
+Problem 2
+a)
+	3
+b)
+	1.	git add hw1q2b.cpp
+	2.	git log
+c) 
+	git commit will make the changed to the head that are staged
+
+Problem 6 part 1 question 3
+If we want to delete a array from the buffer we initialize, from its 
+starting postion to the end as '\0' which means we would also delete
+any other array of chars that appear after the ones we want to delete.
+In addition to just deleting the array of chars we want, we delete anything that may come after it as well.
